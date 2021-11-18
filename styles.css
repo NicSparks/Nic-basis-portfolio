@@ -11,9 +11,6 @@ html {
     padding: 0;
 }
 
-h1, h2, h3{
-    
-}
 .cover {
     width: 100%;
     min-height: 100vh;
@@ -39,6 +36,12 @@ h1, h2, h3{
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
+}
+
+.content {
+    background-color: rgba(225, 225, 243, 0.2);
+    border: 1px solid rgba(125, 125, 125, 0.15);
+    backdrop-filter: blur(4px);
 }
 
 .cover img {   
@@ -86,15 +89,17 @@ nav li a:hover {
 .deck {
     display: flex;
     padding: .5rem;
+    justify-content: center;
+    flex-direction: row;
 
 }
 
 .card {
     height: 225px;
-    width: 150px;
+    width: 425px;
     background: white;
     border-radius: .5rem;
-    margin-right: .5rem;
+    margin-right: 1rem;
     padding: .5rem;
     position: relative;
     overflow: hidden;
@@ -104,7 +109,7 @@ nav li a:hover {
     margin: 0;
 }
 
-.test {
+/*.test {
     position: absolute;
     top: 0;
     right: 0;
@@ -112,4 +117,16 @@ nav li a:hover {
     width: 16px;
     height: 16px;
     background: red;
+}*/
+
+/* Ask how to get footer to match main content*/
+footer {
+    border-top: 1px solid #111;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 0.5rem;
+}
+footer p {
+    margin: 0;
 }
